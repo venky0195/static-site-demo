@@ -1,7 +1,7 @@
 {
     "redirects": [
         {
-            "source": "/old-path",
+            "source": "/old-path/old-path/old-path/old-path/old-path/old-path/old-path/old-path/old-path/old-path/old-path/old-path/old-path/old-path/old-path/old-path/old-path/old-path/old-path/old-path/old-path/old-path/old-path/old-path/old-path/old-path/old-path/old-path/old-path/old-path/old-path/old-path/old-path/old-path/old-path/old-path",
             "destination": "/new-path"
         }
     ]
