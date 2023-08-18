@@ -3,7 +3,7 @@
         {
             "source": "/old-path",
             "destination": "/new-path",
-            "statusCode": 200
+            "statusCode": "string"
         }
     ]
 }
