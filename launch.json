@@ -2,8 +2,8 @@
     "redirects": [
         {
             "source": "/old-path",
-            "destination": "/new-path",
-            "statusCode": "string"
+            "destination": 212,
+            "statusCode": 301
         }
     ]
 }
