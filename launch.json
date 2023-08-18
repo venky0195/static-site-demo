@@ -1,0 +1,9 @@
+{
+    "redirects": [
+        {
+            "source": "/((?!platform-overview|pricing|_next).+)",
+            "destination": "/new-path",
+            "statusCode": 301
+        }
+    ]
+}
