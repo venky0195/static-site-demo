@@ -7,17 +7,3 @@
         }
     ]
 }
-// {
-//     "redirects": [
-//         {
-//             "source": "/blog.html",
-//             "destination": "/about-us.html",
-//             "statusCode": 301
-//         },
-//         {
-//             "source": "/blog.html/:slug",
-//             "destination": "/new-page.html/:slug",
-//             "statusCode": 301
-//         },
-//     ]
-// }
