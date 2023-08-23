@@ -1,9 +1,23 @@
 {
     "redirects": [
         {
-            "source": "/",
+            "source": "/((?!platform-overview|pricing|_next).+)",
             "destination": "/blog.html",
-            "statusCode": 301
+            "statusCode": 307
         }
     ]
 }
+// {
+//     "redirects": [
+//         {
+//             "source": "/blog.html",
+//             "destination": "/about-us.html",
+//             "statusCode": 301
+//         },
+//         {
+//             "source": "/blog.html/:slug",
+//             "destination": "/new-page.html/:slug",
+//             "statusCode": 301
+//         },
+//     ]
+// }
