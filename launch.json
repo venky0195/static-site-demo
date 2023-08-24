@@ -2,7 +2,7 @@
     "redirects": [
         {
             "source": "/blog.html",
-            "destination": "/about-us.html",
+            "destination": "/about-us.html"
         },
         {
             "source": "/blog.html/:slug",
