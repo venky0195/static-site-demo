@@ -1,12 +1,8 @@
 {
     "redirects": [
         {
-            "source": "/blog.html",
-            "destination": "/about-us.html"
-        },
-        {
-            "source": "/blog.html/:slug",
-            "destination": "/new-page.html/:slug",
+            "source": "/((?!platform-overview|pricing|_next).+)",
+            "destination": "/blog.html",
             "statusCode": 307
         }
     ]
