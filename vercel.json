@@ -1,8 +1,8 @@
 {
     "rewrites": [
       {
-        "source": "/post/:path",
-        "destination": "https://redirects-test-dnd.devcontentstackapps.com/about-us.html/:path*"
+        "source": "/posts/:path",
+        "destination": "https://jsonplaceholder.typicode.com/posts/:path*"
       }
     ]
 }
