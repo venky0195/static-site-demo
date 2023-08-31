@@ -1,8 +1,8 @@
 {
-    "redirects": [
+    "rewrites": [
       {
-        "source": "/post/:path(\\d{1,})",
-        "destination": "/news/:path"
+        "source": "/post/:path",
+        "destination": "https://jsonplaceholder.typicode.com/todos/:path*"
       }
     ]
 }
