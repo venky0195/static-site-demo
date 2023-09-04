@@ -2,13 +2,13 @@
   "redirects": [
     {
       "source": "/posts/:path",
-      "destination": "/news/:path*"
+      "destination": "/news/:path"
     }
   ],
     "rewrites": [
       {
         "source": "/posts/:path",
-        "destination": "https://jsonplaceholder.typicode.com/posts/:path*"
+        "destination": "https://jsonplaceholder.typicode.com/posts/:path"
       }
     ]
 }
