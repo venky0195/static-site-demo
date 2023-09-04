@@ -1,4 +1,10 @@
 {
+  "redirects": [
+    {
+      "source": "/posts/:path",
+      "destination": "/news/:path*"
+    }
+  ],
     "rewrites": [
       {
         "source": "/posts/:path",
