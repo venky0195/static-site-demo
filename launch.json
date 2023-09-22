@@ -1,8 +1,8 @@
 {
-    "redirects": [
-      {
-        "source": "/post/:path(\\d{1,})",
-        "destination": "/news/:path"
-      }
-    ]
-  }
+  "rewrites": [
+    {
+      "source": "/blog/post\?id=(\d+)",
+      "destination": "/posts/:id"
+    }
+  ]
+}
