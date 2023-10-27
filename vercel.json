@@ -9,6 +9,12 @@
       {
         "source": "/posts/:path",
         "destination": "https://jsonplaceholder.typicode.com/posts/:path"
-      }
+      },
+            {
+                "source": "/rd/wildcard/*",
+                "destination": "/blog.html/*"
+            }
+        
+    
     ]
 }
