@@ -3,6 +3,10 @@
         {
             "source": "/blog/post\\?id=(\\d+)",
             "destination": "/posts/:id"
+        },
+        {
+            "source": "/rd/wildcard/*",
+            "destination": "/blog.html/*"
         }
     ]
 }
