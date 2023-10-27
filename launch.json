@@ -1,5 +1,5 @@
 {
-    "redirects": [
+    "rewrites": [
         {
             "source": "/blog/post\\?id=(\\d+)",
             "destination": "/posts/:id"
