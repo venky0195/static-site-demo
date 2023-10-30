@@ -1,12 +1,23 @@
 {
-    "rewrites": [
-        {
-            "source": "/blog/post\\?id=(\\d+)",
-            "destination": "/posts/:id"
-        },
-        {
-            "source": "/rd/wildcard/*",
-            "destination": "/blog.html/*"
-        }
-    ]
+  "redirects": [
+     {
+         "source": "/:path((?!platform-overview|pricing|_next|forms2|.*\\.|.*\\?).+[^\\/]$)",
+         "destination": "/:path/"
+     },
+     {
+         "source": "/test/:path((?!excluded-uri).+)\\?posts=:search(.+)",
+         "destination": "/:path/:search",
+         "statusCode": 301
+     },
+     {
+         "source": "/rd/wildcard/*",
+         "destination": "/api/*"
+     }
+ ],
+  "rewrites": [
+     {
+         "source": "/:path((?!platform-overview|pricing|_next|forms2).+)",
+         "destination": "https://live-salesloft-v2.pantheonsite.io/:path"
+     }
+ ]
 }
