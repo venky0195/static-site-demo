@@ -11,7 +11,7 @@
         "destination": "https://jsonplaceholder.typicode.com/posts/:path"
       },
             {
-                "source": "/rd/wildcard/*",
+                "source": "/path{2,3}",
                 "destination": "/blog.html/*"
             }
         
