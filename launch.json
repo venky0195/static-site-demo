@@ -8,10 +8,6 @@
          "source": "/test/:path((?!excluded-uri).+)\\?posts=:search(.+)",
          "destination": "/:path/:search",
          "statusCode": 301
-     },
-     {
-         "source": "/rd/wildcard/*",
-         "destination": "/api/*"
      }
  ],
   "rewrites": [
