@@ -1,8 +1,0 @@
-{
-    "redirects": [
-      {
-        "source": "/post/:path(\\d{1,})",
-        "destination": "/news/:path*"
-      }
-    ]
-  }
