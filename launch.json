@@ -1,5 +1,9 @@
 {
   "redirects": [
+    {
+        "source": "/medicamentos/:path",
+        "destination": "/search/?q=:path"
+    },
      {
          "source": "/:path((?!platform-overview|pricing|_next|forms2|.*\\.|.*\\?).+[^\\/]$)",
          "destination": "/:path/"
