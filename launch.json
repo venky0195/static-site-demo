@@ -2,7 +2,7 @@
   "redirects": [
     {
         "source": "/medicamentos/simeticona",
-        "destination": "/search/?q=simeticona"
+        "destination": "/search?q=simeticona"
     },
      {
          "source": "/:path((?!platform-overview|pricing|_next|forms2|.*\\.|.*\\?).+[^\\/]$)",
