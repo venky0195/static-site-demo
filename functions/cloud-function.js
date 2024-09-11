@@ -16,5 +16,5 @@ function getBaseCollectorUrl(url) {
       return url.replace(logsPath, '');
     }
   
-    return url.trim();
+    return url;
   }
