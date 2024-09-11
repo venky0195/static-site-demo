@@ -3,9 +3,10 @@ export default function handler(req, res) {
     console.log("This is a console")
     const withOutPath = getBaseCollectorUrl("https://dev-launch-api.csnonprod.com/telemetry");
     const withPath = getBaseCollectorUrl("https://dev-launch-api.csnonprod.com/telemetry/v1/logs")
+    const envVar = getBaseCollectorUrl(CFX_TELEMETRY_SERVICE_ENDPOINT)
     res
     .status(200)
-    .json({ env: JSON.stringify(process.env), withOutPath, withPath })
+    .json({ env: JSON.stringify(process.env), withOutPath, withPath , envVar})
 }
 
 function getBaseCollectorUrl(url) {
