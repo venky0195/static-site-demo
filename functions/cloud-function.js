@@ -6,7 +6,7 @@ export default function handler(req, res) {
     const envVar = getBaseCollectorUrl(process.env.CFX_TELEMETRY_SERVICE_ENDPOINT)
     res
     .status(200)
-    .json({ env: JSON.stringify(process.env), withOutPath, withPath , envVar})
+    .json({ env: JSON.stringify(process.env), withOutPath, withPath , envVar: `${envVar}/v1/logs`})
 }
 
 function getBaseCollectorUrl(url) {
