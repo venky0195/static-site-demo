@@ -4,9 +4,12 @@ export default function handler(req, res) {
     const withOutPath = getBaseCollectorUrl("https://dev-launch-api.csnonprod.com/telemetry");
     const withPath = getBaseCollectorUrl("https://dev-launch-api.csnonprod.com/telemetry/v1/logs")
     const envVar = getBaseCollectorUrl(process.env.CFX_TELEMETRY_SERVICE_ENDPOINT)
+
+    const obj = {withOutPath: `${withOutPath}/v1/logs`, withPath: `${withPath}/v1/logs`, envVar: `${envVar}/v1/logs`}
+    
     res
     .status(200)
-    .json({ env: JSON.stringify(process.env), withOutPath, withPath , envVar: `${envVar}/v1/logs`})
+    .json({ env: JSON.stringify(process.env), jsonObj: obj, stringifiedObj: JSON.stringify(obj)})
 }
 
 function getBaseCollectorUrl(url) {
