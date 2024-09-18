@@ -4,5 +4,8 @@
         "source": "/post/:path(\\d{1,})",
         "destination": "/news/:path*"
       }
-    ]
+    ],
+    "preCache": {
+      "urls": ["blog.com"]
+    }
   }
