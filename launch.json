@@ -7,7 +7,7 @@
     ],
     "cache": {
     "cachePriming": {
-      "urls": [
+      "url": [
         "/home",
         "/about"
       ]
