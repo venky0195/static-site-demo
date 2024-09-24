@@ -5,7 +5,12 @@
         "destination": "/news/:path*"
       }
     ],
-    "preCache": {
-      "urls": ["blog.com"]
+    "cache": {
+    "cachePriming": {
+      "urls": [
+        "/home",
+        "/about"
+      ]
     }
+}
   }
