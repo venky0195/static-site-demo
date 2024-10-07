@@ -1,16 +1,10 @@
 {
-    "redirects": [
-      {
-        "source": "/post/:path(\\d{1,})",
-        "destination": "/news/:path*"
-      }
-    ],
-    "cache": {
+  "cache": {
     "cachePriming": {
       "urls": [
-        "/home",
-        "/about"
+        "/blog.html",
+        "/new-page.html"
       ]
     }
-}
   }
+}
