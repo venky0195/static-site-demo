@@ -1,8 +1,14 @@
 {
-  "rewrites": [
+  "redirects": [
     {
       "source": "/blog.html",
-      "destination": "https://products-project.devcontentstackapps.com/"
+      "destination": "https://products-project.devcontentstackapps.com/",
+      "statusCode": 308,
+      "response": {
+        "headers": {
+          "x-powered-by": "launch"
+        }
+      }
     }
   ],
   "cache": {
