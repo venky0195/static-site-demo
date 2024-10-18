@@ -2,7 +2,7 @@
   "redirects": [
     {
       "source": "/blog.html",
-      "destination": "/about-us.html",
+      "destination": "https://products-project.devcontentstackapps.com/",
       "statusCode": 308,
       "response": {
         "headers": {
