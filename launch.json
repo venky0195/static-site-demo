@@ -2,6 +2,7 @@
   "cache": {
     "cachePriming": {
       "urls": [
+        "/delay",
         "/blog.html",
         "/new-page.html"
       ]
