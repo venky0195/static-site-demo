@@ -2,8 +2,8 @@ export default async function handler(req, res) {
   console.log("This is a console");
 
   const targets = [
-    "https://nextjs-starter-new.eu-gcpcontentstackapps.com",
-    "https://nextjs-starter-new.eu-contentstackapps.com"
+    "https://nextjs-starter-new.eu-gcpcontentstackapps.com/hello",
+    "https://nextjs-starter-new.eu-contentstackapps.com/hello"
   ];
 
   const results = await Promise.all(
