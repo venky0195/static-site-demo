@@ -1,24 +1,34 @@
-export default function handler(req, res) {
-    console.log("process.env",process.env)
-    console.log("This is a console")
-    const withOutPath = getBaseCollectorUrl("https://dev-launch-api.csnonprod.com/telemetry");
-    const withPath = getBaseCollectorUrl("https://dev-launch-api.csnonprod.com/telemetry/v1/logs")
-    const envVar = getBaseCollectorUrl(process.env.CFX_TELEMETRY_SERVICE_ENDPOINT)
+export default async function handler(req, res) {
+  console.log("This is a console");
 
-    const obj = {withOutPath: `${withOutPath}/v1/logs`, withPath: `${withPath}/v1/logs`, envVar: `${envVar}/v1/logs`}
-    
-    res
-    .status(200)
-    .json({ env: JSON.stringify(process.env), jsonObj: obj, stringifiedObj: JSON.stringify(obj)})
+  const targets = [
+    "https://nextjs-starter-new.eu-gcpcontentstackapps.com",
+    "https://nextjs-starter-new.eu-contentstackapps.com"
+  ];
+
+  const results = await Promise.all(
+    targets.map(async (url) => {
+      const start = Date.now();
+      try {
+        const response = await fetch(url);
+        const latency = Date.now() - start;
+        return {
+          url,
+          status: response.status,
+          latency: `${latency} ms`
+        };
+      } catch (err) {
+        return {
+          url,
+          error: err.message,
+          latency: "failed"
+        };
+      }
+    })
+  );
+  console.log(results,"results")
+  res.status(200).json({
+    message: "helloworld!",
+    results
+  });
 }
-
-function getBaseCollectorUrl(url) {
-    if (!url) return '';
-  
-    const logsPath = '/v1/logs';
-    if (url.endsWith(logsPath)) {
-      return url.replace(logsPath, '');
-    }
-  
-    return url;
-  }
