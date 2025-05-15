@@ -1,19 +1,13 @@
 {
-  "redirects": [
-     {
-         "source": "/:path((?!platform-overview|pricing|_next|forms2|.*\\.|.*\\?).+[^\\/]$)",
-         "destination": "/:path/"
-     },
-     {
-         "source": "/test/:path((?!excluded-uri).+)\\?posts=:search(.+)",
-         "destination": "/:path/:search",
-         "statusCode": 301
-     }
- ],
-  "rewrites": [
-     {
-         "source": "/:path((?!platform-overview|pricing|_next|forms2).+)",
-         "destination": "https://live-salesloft-v2.pantheonsite.io/:path"
-     }
- ]
+  "headers": [
+    {
+      "source": "/",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "s-maxage=3600000"
+        }
+      ]
+    }
+  ]
 }
