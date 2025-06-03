@@ -1,4 +1,11 @@
 {
+  "redirects": [
+      {
+        "source": "/blog.html",
+        "destination": "/new-page.html",             
+        "statusCode": 308
+      }
+  ],
   "cache": {
     "cachePriming": {
       "urls": [
