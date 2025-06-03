@@ -1,7 +1,7 @@
 {
   "redirects": [
       {
-        "source": "/blog.html",
+        "source": "/test3",
         "destination": "/new-page.html",             
         "statusCode": 308
       }
