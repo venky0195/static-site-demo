@@ -3,7 +3,7 @@
     "cachePriming": {
       "urls": [
         "blog.html",
-        "/new-page.html"
+        "https://static-site-demo-cpa.devcontentstackapps.com/new-page.html"
       ]
     }
   }
