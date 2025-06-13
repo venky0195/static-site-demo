@@ -1,16 +1,8 @@
 {
-  "redirects": [
-      {
-        "source": "/test3",
-        "destination": "/new-page.html",             
-        "statusCode": 308
-      }
-  ],
-  "cache": {
+ "cache": {
     "cachePriming": {
       "urls": [
-        "/delay",
-        "/blog.html",
+        "blog.html",
         "/new-page.html"
       ]
     }
