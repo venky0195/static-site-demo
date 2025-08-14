@@ -1,10 +1,11 @@
 {
- "cache": {
-    "cachePriming": {
-      "urls": [
-        "blog.html",
-        "https://static-site-demo-cpa.devcontentstackapps.com/new-page.html"
-      ]
+ 
+    "redirects": [
+      {
+      "source": "/:path*",
+      "destination": "https://www.my-domainnews.com/:path*",
+      "statusCode": 301
     }
-  }
+    ]
+  
 }
