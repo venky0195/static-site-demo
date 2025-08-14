@@ -2,8 +2,8 @@
  
     "redirects": [
       {
-      "source": "/:path*",
-      "destination": "https://www.my-domainnews.com/:path*",
+      "source": "/:path",
+      "destination": "https://www.my-domainnews.com/:path",
       "statusCode": 301
     }
     ]
