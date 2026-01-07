@@ -3,8 +3,7 @@
     "rewrites": [
       {
       "source": "/:path",
-      "destination": "https://www.my-domainnews.com/:path",
-      "statusCode": 301
+      "destination": "https://www.my-domainnews.com/:path"
     }
     ]
   
