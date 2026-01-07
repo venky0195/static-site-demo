@@ -3,7 +3,7 @@
     "rewrites": [
       {
       "source": "/:path",
-      "destination": "https://www.my-domainnews.com/:path"
+      "destination": "https://www.google.com/:path"
     }
     ]
   
