@@ -1,9 +1,9 @@
 {
- 
+  "cache": {
     "cachePriming": {
       "urls": [
         "/blog.html"
       ]
     }
-  
+  }
 }
