@@ -1,10 +1,9 @@
 {
  
-    "rewrites": [
-      {
-      "source": "/:path",
-      "destination": "https://www.google.com/:path"
+    "cachePriming": {
+      "urls": [
+        "blog.html"
+      ]
     }
-    ]
   
 }
