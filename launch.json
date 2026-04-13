@@ -2,7 +2,7 @@
  
     "cachePriming": {
       "urls": [
-        "blog.html"
+        "/blog.html"
       ]
     }
   
